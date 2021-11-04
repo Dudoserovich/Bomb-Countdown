@@ -118,6 +118,7 @@ async function timer() {
             clearInterval(interval);
             resolve('stop');
             updateTimer(0);
+            document.querySelector('.buttons :last-child').style.cursor = 'not-allowed';
         });
 
     }).then(str => {
