@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bomb Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>
+    Bomb Countdown
+</h2>
+<div class="container">
+
+    <div class="time gradient">
+        <div class="min">
+            00
+        </div>
+        <div class="dot">:</div>
+
+        <div class="sec">
+            00
+        </div>
+        <div class="dot">:</div>
+
+        <div class="mill">
+            000
+        </div>
+    </div>
+
+    <label class="choose">
+        <select id="min">
+            <option selected hidden value="-1">Минуты</option>
+        </select>
+
+        <select id="sec">
+            <option selected hidden value="-1">Секунды</option>
+        </select>
+
+        <select id="mill">
+            <option selected hidden value="-1">Миллисекунды</option>
+        </select>
+    </label>
+
+</div>
+
+<div class="buttons">
+    <button onclick="start()">
+        start
+    </button>
+
+    <button onclick="">
+        stop
+    </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
